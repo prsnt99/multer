@@ -37,7 +37,7 @@ class AuthController {
   };
 
   signIn = async (req, res) => {
-    try {
+    try {  
       let { email, password } = req.body;
 
       let doc = await UserModel.findOne({ email: email });

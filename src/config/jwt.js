@@ -6,4 +6,4 @@ import jwt from "jsonwebtoken";
   });
 };
 
-export default jsonwebtoken
+export default jsonwebtoken      
