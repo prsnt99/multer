@@ -46,7 +46,7 @@ class AuthController {
         let hashPassword = bcrypt.compareSync(password, doc.password);
         if (!hashPassword) {
           return res.status(400).json({ message: "Incorrect password" });
-        } else {
+        } else {   
           let token = jsonwebtoken(doc);
           return res
             .status(200)
